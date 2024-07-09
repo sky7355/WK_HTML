@@ -1,0 +1,102 @@
+/* 새로운 스타일 추가 */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.categories {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    flex: 1 1 30%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.question {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.question:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.question.clicked {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.scoreboard {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.score input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
